@@ -40,10 +40,42 @@
     font-weight: 400;
     line-height: 24px;
     color: #C8C8C8;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .banner__btns {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+    .banner__wrap {
+        justify-content: center;
+    }
+
+    .banner__desc {
+        text-align: center;
+    }
+
+    .banner__btns {
+        justify-content: center;
+    }
+
+    .banner__desc-title {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .banner__desc-title {
+        font-size: 30px;
+    }
+    
+    .banner__btns{
+        gap: 15px;
+    }
 }

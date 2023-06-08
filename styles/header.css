@@ -43,6 +43,7 @@
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 200px;
 }
 
 .navbar__wrap {
@@ -107,4 +108,21 @@
     background: var(--or);
     transition: 0.3s;
     transform: translateX(-50%);
+}
+
+@media screen and (max-width:768px){
+    .navbar__wrap{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    
+    .navbar__list-item-link{
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .navbar__list{
+        gap: 15px;
+    }
 }
