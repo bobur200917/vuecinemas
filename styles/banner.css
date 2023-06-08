@@ -16,7 +16,7 @@
 .banner__wrap {
     display: flex;
     justify-content: flex-start;
-    align-self: center;
+    align-items: center;
 }
 
 .banner__desc {
@@ -49,7 +49,7 @@
 .banner__btns {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 30px;
 }
 
 @media screen and (max-width:768px) {
@@ -74,8 +74,8 @@
     .banner__desc-title {
         font-size: 30px;
     }
-    
-    .banner__btns{
+
+    .banner__btns {
         gap: 15px;
     }
 }
